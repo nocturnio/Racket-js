@@ -1,0 +1,1 @@
+("6.10.1" ("dd6fd38058e7d01d2c3b17a77ac9bce622b3a58e" . "3ec53b8bbd2d898d084acd13ee9787ef359db491") (collects #"js" #"js-base.rkt") (collects #"js" #"js-declaration.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt"))

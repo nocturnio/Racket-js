@@ -1,0 +1,1 @@
+("6.10.1" ("2680a0252163b5a4e046e23d4e89a02dcdd99e67" . "62759d3f8d58c2af212c8c414b48d545cab1a654") (collects #"js" #"main.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt"))
