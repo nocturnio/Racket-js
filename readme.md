@@ -1,70 +1,67 @@
-# Project Title
+# Racket Js
 
-One Paragraph of project description goes here
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Racket JS is a macro in Racket that compiles into javascript.
+It allows us to write a module in standard Racket syntax that compiles into javascript.
+JS modules can be manipulated as a Racket object.
+We can also take advantage of the Racket package manager to install/maintain/build javascript projects.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+__[Racket Language](https://racket-lang.org)__
 
-```
-Give examples
-```
+<= Racket v6.10.1
+
+Versions higher than v6.10.1 will most likely work, but have not been tested.
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+#### Step 1.
 
-Say what the step will be
+__[Install Racket](https://racket-lang.org)__
 
-```
-Give the example
-```
+#### Step 2.
 
-And repeat
+Run
 
 ```
-until finished
+raco pkg install "/<path-to-project>/Racket-js"
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+## Using Racket-js
 
-## Running the tests
+### hellojs module
+``` scheme
+#lang racket
+(require js)
 
-Explain how to run the automated tests for this system
+(module/js hellojs
 
-### Break down into end to end tests
+  (provide hello-world)
 
-Explain what these tests test and why
+  (define (hello-world)
+    (displayln "HELLO WORLD"))
 
-```
-Give an example
-```
+  )
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+(send hellojs write-to-file: "compiled/hello.js")
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+### compiles to
+``` javascript
+var hello_world;
+(function(){
+    hello_world = function(){return js_displayln("HELLO WORLD");};
+    return false;
+})();
+```
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Racket](https://racket-lang.org/)
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/nocturnio/Racket-js/blob/master/CODE_OF_CONDUCT.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
@@ -72,16 +69,14 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Allen Hsu** - __[github/allenhsu4390](https://github.com/allenhsu4390)__
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/nocturnio/Racket-js/contributors) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Other Projects
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* __[Nocturn](https://nocturn.io)__
