@@ -75,6 +75,6 @@ See also the list of [contributors](https://github.com/nocturnio/Racket-js/contr
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Other Projects
+## Projects using Racket Js
 
 * __[Nocturn](https://nocturn.io)__
