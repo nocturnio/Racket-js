@@ -42,8 +42,6 @@ raco pkg install "/<path-to-project>/Racket-js"
     (displayln "HELLO WORLD"))
 
   )
-
-(send hellojs write-to-file: "compiled/hello.js")
 ```
 
 ### compiles to
