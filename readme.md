@@ -77,15 +77,14 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Language Reference
 
-racket-js has not implemented everything from Racket in javascript yet.
+racket-js has not implemented everything from Racket yet.
 What has been included so far is listed below.
-Most are functions mapped Racket to a javascript equivalent.
-While some are javascript functions callable directly.
+
 
 * available language forms are defined in js-syntax.rkt
 * implementations for defined forms are in js-language.rkt
 
-### List of available syntax forms from Racket
+### Syntax forms from Racket
 ```
 define
 define/contract
@@ -119,13 +118,16 @@ get-field
 set-field!
 ```
 
-### List of symbols and keywords from Racket
+### Identifiers from Racket
 ```
 self
 super
+false
+true
+object%
 ```
 
-### List of symbols and keywords from javascript
+### Identifiers from javascript
 ```
 this
 document
@@ -137,15 +139,12 @@ process
 nan
 event
 custom-event
-object%
-false
-true
 undefined
 null
 arguments
 ```
 
-### List of functions from Racket
+### Functions from Racket
 ```
 +
 -
@@ -235,7 +234,7 @@ display
 displayln
 ```
 
-### List of functions from javascript
+### Functions from javascript
 ```
 alert
 delete
@@ -252,7 +251,7 @@ try-catch
 undefined?
 ```
 
-### List of custom functions
+### Custom functions
 ```
 >>*
 l>
