@@ -265,15 +265,27 @@ void-contracts!
 ```
 
 ## Additional Information
+
 send - equivalent to using class.method() in javascript
+
 get-field - equivalent to using class.property in javascript
+
 self - replaces **this** in Racket class syntax form
+
 void? - checks for undefined
+
 hash - hash compiles to json objects
+
 vector - vector compiles to javascript arrays
+
 object - Racket class objects match with javascript objects
+
 display - maps to console.log
+
 void-contracts! - turns all contracts off
+
 >>* - compose async
+
 l> - pipe
+
 l>* - pipe async
