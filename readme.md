@@ -1,9 +1,9 @@
 # Racket Js
 
-Racket JS is a macro in Racket that compiles into javascript.
-It allows us to write a module in standard Racket syntax that compiles into javascript.
-JS modules can be manipulated as a Racket object.
-We can also take advantage of the Racket package manager to install/maintain/build javascript projects.
+racket-js is a racket to javascript compiler implemented as a macro.
+It allows us to write racket code that will compile into javascript.
+Because racket-js is a macro, we can mix racket code with racket-js code.
+Which means we can also take advantage of the Racket package manager to make javascript projects.
 
 ### Prerequisites
 
