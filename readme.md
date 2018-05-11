@@ -80,7 +80,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 racket-js has not implemented everything from Racket in javascript yet.
 What has been included so far is listed below.
 Most are functions mapped Racket to a javascript equivalent.
-While some are javascript functions callable directly, for convenience.
+While some are javascript functions callable directly.
+
+* available language forms are defined in js-syntax.rkt
+* implementations for defined forms are in js-language.rkt
 
 ### List of available syntax forms from Racket
 ```
@@ -249,7 +252,7 @@ try-catch
 undefined?
 ```
 
-### List of custom syntax forms
+### List of custom functions
 ```
 >>*
 l>
@@ -260,10 +263,6 @@ for-loop/break
 for-loop/final
 for-loop/start
 for-loop/only
-```
-
-### List of custom functions
-```
 void-contracts!
 ```
 
