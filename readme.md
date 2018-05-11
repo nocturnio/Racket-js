@@ -21,10 +21,10 @@ __[Install Racket](https://racket-lang.org)__
 
 #### Step 2.
 
-Run
+Run in terminal
 
 ```
-raco pkg install "/<path-to-project>/Racket-js"
+raco pkg install "/<path-to-project>/racket-js"
 ```
 
 ## Using Racket-js
@@ -32,7 +32,7 @@ raco pkg install "/<path-to-project>/Racket-js"
 ### hellojs module
 ``` scheme
 #lang racket
-(require js)
+(require racket-js)
 
 (module/js hellojs
 
