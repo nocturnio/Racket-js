@@ -108,14 +108,14 @@ and/c
 false/c
 true/c
 any/c
-send - equivalent to using class.method() in javascript
-get-field - equivalent to using class.property in javascript
+send
+get-field
 set-field!
 ```
 
 ### List of symbols and keywords from Racket
 ```
-self - replaces **this** in Racket class syntax form
+self
 super
 ```
 
@@ -171,13 +171,13 @@ even?
 odd?
 is-a?
 nan?
-void? - checks for undefined
+void?
 procedure?
 contract?
 ```
 
 ```
-hash - hash compiles to json objects
+hash
 hash-for-each
 hash-for-each/key
 hash?
@@ -190,7 +190,7 @@ hash-remove!
 ```
 
 ```
-vector - vector compiles to javascript arrays
+vector
 vector?
 vector-fold
 vector-map
@@ -218,14 +218,14 @@ string-empty?
 ```
 
 ```
-make-object - Racket class objects match with javascript objects
+make-object
 object?
 ```
 
 ```
 error
 apply
-display - maps to console.log
+display
 displayln
 ```
 
@@ -248,9 +248,9 @@ undefined?
 
 ### List of custom syntax forms
 ```
->>* - compose async
-l> - pipe
-l>* - pipe async
+>>*
+l>
+l>*
 while-loop
 for-loop
 for-loop/break
@@ -261,5 +261,19 @@ for-loop/only
 
 ### List of custom functions
 ```
-void-contracts! - turns all contracts off
+void-contracts!
 ```
+
+## Additional Information
+send - equivalent to using class.method() in javascript
+get-field - equivalent to using class.property in javascript
+self - replaces **this** in Racket class syntax form
+void? - checks for undefined
+hash - hash compiles to json objects
+vector - vector compiles to javascript arrays
+object - Racket class objects match with javascript objects
+display - maps to console.log
+void-contracts! - turns all contracts off
+>>* - compose async
+l> - pipe
+l>* - pipe async
