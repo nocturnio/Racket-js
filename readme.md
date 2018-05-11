@@ -284,7 +284,7 @@ display - maps to console.log
 
 void-contracts! - turns all contracts off
 
->>* - compose async
+```>>*``` - compose async
 
 l> - pipe
 
