@@ -77,7 +77,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Language Reference
 
-racket-js is an incomplete implementation of Racket in javascript.
+racket-js has not implemented everything from Racket in javascript yet.
+What has been included so far is listed below.
+Most are functions mapped Racket to a javascript equivalent.
+While some are javascript functions callable directly, for convenience.
 
 ### List of available syntax forms from Racket
 ```
