@@ -146,7 +146,8 @@
                    b ...))))))
 
 (define-syntax cxt-command
-  (syntax-rules (define define/contract)
+  (syntax-rules (define
+                  define/contract)
 
     ((_ c (define (f #:rest x) b ...))
      (let ((v (cxt-query

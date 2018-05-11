@@ -78,3 +78,166 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Projects using Racket Js
 
 * __[Nocturn](https://nocturn.io)__
+
+## Language Reference
+
+racket-js is an incomplete implementation of Racket in javascript.
+
+### List of available syntax forms from Racket
+* define
+* define/contract
+* lambda
+* class
+* let
+* let*
+* for
+* for/vector
+* for/first
+* if
+* cond
+* unless
+* when
+* new
+* require
+* provide
+* ->
+* ->v
+* ->m
+* =>
+* class/c
+* class?
+* or/c
+* and/c
+* false/c
+* true/c
+* any/c
+
+### List of symbols and keywords from Racket
+* self - replaces **this** in Racket class syntax form
+* super
+
+### List of symbols and keywords from javascript
+* this
+* document
+* window
+* date
+* math
+* console
+* process
+* nan
+* event
+* custom-event
+* object%
+* false
+* true
+* undefined
+* null
+* arguments
+
+### List of functions from Racket
+* +
+* -
+* *
+* /
+* =
+* >
+* <
+* >=
+* <=
+* >>
+* modulo
+* or
+* and
+* not
+* set!
+* bitwise-and
+* bitwise-ior
+* eq?
+* equal?
+* string=?
+
+* number?
+* integer?
+* boolean?
+* even?
+* odd?
+* is-a?
+* nan?
+* display
+* displayln
+
+* hash - hash compiles to json objects
+* hash-for-each
+* hash-for-each/key
+* hash?
+* hash->string
+* string->hash
+* hash-ref
+* hash-set!
+* hash-copy
+* hash-remove!
+
+* vector - vector compiles to javascript arrays
+* vector?
+* vector-fold
+* vector-map
+* vector-filter
+* vector-for-each
+* vector-member
+* vector-append
+* vector-append!
+* vector-ref
+* vector-set!
+* vector-length
+* vector-empty?
+* vector-last
+* vector-flatten
+
+* string?
+* string-append
+* substring
+* string-length
+* string-join
+* string-split
+* string-empty?
+
+* make-object - Racket class objects match with javascript objects
+* object?
+* send - equivalent to using class.method() in javascript
+* get-field - equivalent to using class.property in javascript
+* set-field!
+
+* error
+* void? - checks for undefined
+* procedure?
+* apply
+* contract?
+
+### List of functions from javascript
+* alert
+* delete
+* set-timeout
+* uri-encode
+* typeof
+* throw
+* array
+* json
+* make-number
+* parse-float
+* parse-int
+* try-catch
+* undefined?
+
+### List of custom syntax forms
+* >>* - compose async
+* l> - pipe
+* l>* - pipe async
+* while-loop
+* for-loop
+* for-loop/break
+* for-loop/final
+* for-loop/start
+* for-loop/only
+
+### List of custom functions
+* void-contracts! - turns all contracts off
